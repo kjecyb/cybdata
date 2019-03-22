@@ -1,0 +1,504 @@
+Introduction	**(Bro	 Elastic)**
+ conn.log	ts	 timestamp
+ conn.log	uid	
+ conn.log	id.orig_h	 source_ip
+ conn.log	id.orig_p	 source_port
+ conn.log	id.resp_h	 destination_ip
+ conn.log	id.resp_p	 destination_port
+ conn.log	proto	 protocol
+ conn.log	service	
+ conn.log	duration	
+ conn.log	orig_bytes	 original_bytes
+ conn.log	resp_bytes	 respond_bytes
+ conn.log	conn_state	 connection_state
+ conn.log	local_orig	
+ conn.log	local_resp	 local_respond
+ conn.log	missed_bytes	
+ conn.log	history	
+ conn.log	orig_pkts	 original_packets
+ conn.log	orig_ip_bytes	 original_ipbytes
+ conn.log	resp_pkts	 respond_packets
+ conn.log	resp_ip_bytes	 respond_ipbytes
+ conn.log	tunnel_parents	
+ conn.log	original_country_code	
+ conn.log	respond_country_code	
+ conn.log	sensor_name	
+ dhcp.log	ts	 timestamp
+ dhcp.log	uid	
+ dhcp.log	id.orig_h	 source_ip
+ dhcp.log	id.orig_p	 source_port
+ dhcp.log	id.resp_h	 destination_ip
+ dhcp.log	id.resp_p	 destination_port
+ dhcp.log	mac	
+ dhcp.log	assigned_ip	
+ dhcp.log	lease_time	
+ dhcp.log	trans_id	 transaction_id
+ dns.log	ts = > timestamp	
+ dns.log	uid	
+ dns.log	id.orig_h	 source_ip
+ dns.log	id.orig_p	 source_port
+ dns.log	id.resp_h	 destination_ip
+ dns.log	id.resp_p	 destination_port
+ dns.log	proto	 protocol
+ dns.log	trans_id	 transaction_id
+ dns.log	rtt	
+ dns.log	query	
+ dns.log	qclass	 query_class
+ dns.log	qclass_name	 query_class_name
+ dns.log	qtype	 query_type
+ dns.log	qtype_name	 query_type_name
+ dns.log	rcode	
+ dns.log	rcode_name	
+ dns.log	AA	 aa
+ dns.log	TC	 tc
+ dns.log	RD	 rd
+ dns.log	RA	 ra
+ dns.log	Z	 z
+ dns.log	answers	
+ dns.log	TTLS	 ttls (removed if not available)
+ dns.log	rejected	
+ dpd.log	ts	 timestamp
+ dpd.log	uid	
+ dpd.log	id.orig_h	 source_ip
+ dpd.log	id.orig_p	 source_port
+ dpd.log	id.resp_h	 destination_ip
+ dpd.log	id.resp_p	 destination_port
+ dpd.log	proto	 protocol
+ dpd.log	analyzer	
+ dpd.log	failure_reason	
+ files.log	ts	 timestamp
+ files.log	fuid	
+ files.log	tx_hosts  	 file_ip
+ files.log	rx_hosts	 destination_ip
+ files.log	conn_uids	 connection_uids
+ files.log	source	
+ files.log	depth	
+ files.log	analyzers	 analyzer
+ files.log	mime_type	 mimetype
+ files.log	filename	 file_name
+ files.log	duration	
+ files.log	local_orig	
+ files.log	is_orig	
+ files.log	seen_bytes	
+ files.log	total_bytes	
+ files.log	missing_bytes	
+ files.log	overflow_bytes	
+ files.log	timedout	 timed_out
+ files.log	parent_fuid	
+ files.log	md5	
+ files.log	sha1	
+ files.log	sha256	
+ files.log	extracted	
+ files.log	extracted_cutoff	
+ files.log	extracted_size	
+ ftp.log	ts	 timestamp
+ ftp.log	uid	
+ ftp.log	id.orig_h	 source_ip
+ ftp.log	id.orig_p	 source_port
+ ftp.log	id.resp_h	 destination_ip
+ ftp.log	id.resp_p	 destination_port
+ ftp.log	user	 ftp_username
+ ftp.log	password	
+ ftp.log	command	 ftp_command
+ ftp.log	arg	 ftp_argument
+ ftp.log	mime_type	 mimetype
+ ftp.log	file_size	
+ ftp.log	reply_code	
+ ftp.log	reply_msg	 reply_message
+ ftp.log	data_channel.passive	 data_channel_passive
+ ftp.log	data_channel.orig_h	 data_channel_source_ip
+ ftp.log	data_channel.resp_h	 data_channel_destination_ip
+ ftp.log	data_channel.resp_h	 data_channel_destination_port
+ ftp.log	fuid	
+ http.log	ts	 timestamp
+ http.log	uid	
+ http.log	id.orig_h	 source_ip
+ http.log	id.orig_p	 source_port
+ http.log	id.resp_h	 destination_ip
+ http.log	id.resp_p	 destination_port
+ http.log	trans_depth	
+ http.log	method	
+ http.log	host	 virtual_host
+ http.log	uri	
+ http.log	referrer	
+ http.log	version	
+ http.log	user_agent	 useragent
+ http.log	request_body_len	 request_body_length
+ http.log	response_body_len	 response_body_length
+ http.log	status_code	
+ http.log	status_message	
+ http.log	info_code	
+ http.log	info_msg	 info_message
+ http.log	tags (removed)	
+ http.log	username	 user
+ http.log	password	
+ http.log	proxied	
+ http.log	orig_fuids	
+ http.log	orig_filenames	
+ http.log	orig_mime_types	
+ http.log	resp_fuids	
+ http.log	resp_filenames	
+ http.log	resp_mime_types	
+ intel.log	ts	 timestamp
+ intel.log	uid	
+ intel.log	id.orig_h	 source_ip
+ intel.log	id.orig_p	 source_port
+ intel.log	id.resp_h	 destination_ip
+ intel.log	id.resp_p	 destination_port
+ intel.log	seen.indicator	 indicator
+ intel.log	seen.indicator_type	 indicator_type
+ intel.log	seen.where	 seen_where
+ intel.log	seen.node	 seen_node
+ intel.log	matched	
+ intel.log	sources	
+ intel.log	fuid	
+ intel.log	file_mime_type	 mimetype
+ intel.log	file_desc	 file_description
+ irc.log	ts	 timestamp
+ irc.log	uid	
+ irc.log	id.orig_h	 source_ip
+ irc.log	id.orig_p	 source_port
+ irc.log	id.resp_h	 destination_ip
+ irc.log	id.resp_p	 destination_port
+ irc.log	nick	
+ irc.log	user	 irc_username
+ irc.log	command	 irc_command
+ irc.log	value	
+ irc.log	addl	 additional_info
+ irc.log	dcc_file_name	
+ irc.log	dcc_file_size	
+ irc.log	dcc_mime_type	
+ irc.log	fuid	
+ kerberos.log	timestamp	
+ kerberos.log	uid	
+ kerberos.log	id.orig_h	 source_ip
+ kerberos.log	id.orig_p	 source_port
+ kerberos.log	id.resp_h	 destination_ip
+ kerberos.log	id.resp_p	 destination_port
+ kerberos.log	request_type	
+ kerberos.log	client	
+ kerberos.log	service	
+ kerberos.log	success	 kerberos_success
+ kerberos.log	error_msg	 error_message
+ kerberos.log	from	 email_from
+ kerberos.log	till	 valid_till
+ kerberos.log	cipher	
+ kerberos.log	forwardable	
+ kerberos.log	renewable	
+ kerberos.log	client_cert	 client_certificate_subject
+ kerberos.log	client_cert_fuid	 client_certificate_uid
+ kerberos.log	server_cert_subject	 server_certificate_subject
+ kerberos.log	server_cert_fuid	 server_certificate_fuid
+ modbus.log	ts	 timestamp
+ modbus.log	uid	
+ modbus.log	id.orig_h	 source_ip
+ modbus.log	id.orig_p	 source_port
+ modbus.log	id.resp_h	 destination_ip
+ modbus.log	id.resp_p	 destination_port
+ modbus.log	func	 function
+ modbus.log	exception	
+ mysql.log	ts	 timestamp
+ mysql.log	uid	
+ mysql.log	id.orig_h	 source_ip
+ mysql.log	id.orig_p	 source_port
+ mysql.log	id.resp_h	 destination_ip
+ mysql.log	id.resp_p	 destination_port
+ mysql.log	cmd	 mysql_command
+ mysql.log	arg	 mysql_argument
+ mysql.log	success	 mysql_success
+ mysql.log	rows	
+ mysql.log	response	
+ notice.log	ts	 timestamp
+ notice.log	uid	
+ notice.log	id.orig_h	 source_ip
+ notice.log	id.orig_p	 source_port
+ notice.log	id.resp_h	 destination_ip
+ notice.log	id.resp_p	 destination_port
+ notice.log	fuid	
+ notice.log	mime	 file_mime_type
+ notice.log	desc	 file_description
+ notice.log	proto	 protocol
+ notice.log	note	 note
+ notice.log	msg	 msg
+ notice.log	sub	 sub_msg
+ notice.log	src	 source_ip
+ notice.log	dst	 destination_ip
+ notice.log	p	
+ notice.log	n	
+ notice.log	peer_descr	 peer_description
+ notice.log	actions	 action
+ notice.log	suppress_for	
+ notice.log	dropped	
+ notice.log	destination_country_code	
+ notice.log	destination_region	
+ notice.log	destination_city	
+ notice.log	destination_latitude	
+ notice.log	destination_longitude	
+ pe.log	ts	 timestamp
+ pe.log	fuid	
+ pe.log	machine	
+ pe.log	compile_ts	
+ pe.log	os	
+ pe.log	subsystem	
+ pe.log	is_exe	
+ pe.log	is_64bit	
+ pe.log	uses_aslr	
+ pe.log	uses_dep	
+ pe.log	uses_code_integrity	
+ pe.log	uses_seh	
+ pe.log	has_import_table	
+ pe.log	has_export_table	
+ pe.log	has_cert_table	
+ pe.log	has_debug_data	
+ pe.log	section_names	
+ radius.log	ts	 timestamp
+ radius.log	uid	
+ radius.log	id.orig_h	 source_ip
+ radius.log	id.orig_p	 source_port
+ radius.log	id.resp_h	 destination_ip
+ radius.log	id.resp_p	 destination_port
+ radius.log	username	 radius_username
+ radius.log	mac	
+ radius.log	remote_ip	
+ radius.log	connect_info	
+ radius.log	result	
+ radius.log	logged	
+ rdp.log	ts	 timestamp
+ rdp.log	uid	
+ rdp.log	id.orig_h	 source_ip
+ rdp.log	id.orig_p	 source_port
+ rdp.log	id.resp_h	 destination_ip
+ rdp.log	id.resp_p	 destination_port
+ rdp.log	cookie	
+ rdp.log	result	
+ rdp.log	security_protocol	
+ rdp.log	keyboard_layout	
+ rdp.log	client_build	
+ rdp.log	client_name	
+ rdp.log	client_dig_product_id	 client_digital_product_id
+ rdp.log	desktop_width	
+ rdp.log	desktop_height	
+ rdp.log	requested_color_depth	
+ rdp.log	cert_type	 certificate_type
+ rdp.log	cert_count	 certificate_count
+ rdp.log	cert_permanent	 certificate_permanent
+ rdp.log	encryption_level	
+ rdp.log	encryption_method	
+ rfb.log	ts	 timestamp
+ rfb.log	uid	
+ rfb.log	id.orig_h	 source_ip
+ rfb.log	id.orig_p	 source_port
+ rfb.log	id.resp_h	 destination_ip
+ rfb.log	id.resp_p	 destination_port
+ rfb.log	client_major_version	
+ rfb.log	client_minor_version	
+ rfb.log	server_major_version	
+ rfb.log	server_minor_version	
+ rfb.log	authentication_method	
+ rfb.log	auth	
+ rfb.log	share_flag	
+ rfb.log	desktop_name	
+ rfb.log	width	
+ rfb.log	height	
+ signatures.log	ts	 timestamp
+ signatures.log	uid	
+ signatures.log	id.orig_h	 source_ip
+ signatures.log	id.orig_p	 source_port
+ signatures.log	id.resp_h	 destination_ip
+ signatures.log	id.resp_p	 destination_port
+ signatures.log	note	
+ signatures.log	sig_id	 signature_id
+ signatures.log	event_msg	 event_message
+ signatures.log	sub_msg	 sub_message
+ signatures.log	sig_count	 signature_count
+ signatures.log	host_count	
+ sip.log	ts	 timestamp
+ sip.log	uid	
+ sip.log	id.orig_h	 source_ip
+ sip.log	id.orig_p	 source_port
+ sip.log	id.resp_h	 destination_ip
+ sip.log	id.resp_p	 destination_port
+ sip.log	trans_depth	
+ sip.log	method	
+ sip.log	uri	
+ sip.log	date	
+ sip.log	request_from	
+ sip.log	request_to	
+ sip.log	response_from	
+ sip.log	response_to	
+ sip.log	reply_to	
+ sip.log	call_id	
+ sip.log	seq	
+ sip.log	subject	
+ sip.log	request_path	
+ sip.log	response_path	
+ sip.log	user_agent	
+ sip.log	status_code	
+ sip.log	status_msg	
+ sip.log	warning	
+ sip.log	request_body_len	
+ sip.log	response_body_len	
+ sip.log	content_type	
+ smtp.log	ts	 timestamp
+ smtp.log	uid	
+ smtp.log	id.orig_h	 source_ip
+ smtp.log	id.orig_p	 source_port
+ smtp.log	id.resp_h	 destination_ip
+ smtp.log	id.resp_p	 destination_port
+ smtp.log	trans_depth	
+ smtp.log	helo	
+ smtp.log	mailfrom	 mail_from
+ smtp.log	rcptto	 recipient_to
+ smtp.log	date	 mail_date
+ smtp.log	from	
+ smtp.log	to	
+ smtp.log	cc	
+ smtp.log	reply_to	
+ smtp.log	msg_id	 message_id
+ smtp.log	in_reply_to	
+ smtp.log	subject	
+ smtp.log	x_originating_ip	
+ smtp.log	first_received	
+ smtp.log	second_received	
+ smtp.log	last_reply	
+ smtp.log	path	
+ smtp.log	useragent	 user_agent
+ smtp.log	tls	
+ smtp.log	fuids	
+ smtp.log	is_webmail	
+ snmp.log	ts	 timestamp
+ snmp.log	uid	
+ snmp.log	id.orig_h	 source_ip
+ snmp.log	id.orig_p	 source_port
+ snmp.log	id.resp_h	 destination_ip
+ snmp.log	id.resp_p	 destination_port
+ snmp.log	duration	
+ snmp.log	version	
+ snmp.log	community	
+ snmp.log	get_requests	
+ snmp.log	get_bulk_requests	
+ snmp.log	get_responses	
+ snmp.log	set_requests	 set_responses
+ snmp.log	display_string	
+ snmp.log	up_since	
+ socks.log	timestamp	
+ socks.log	uid	
+ socks.log	id.orig_h	 source_ip
+ socks.log	id.orig_p	 source_port
+ socks.log	id.resp_h	 destination_ip
+ socks.log	id.resp_p	 destination_port
+ socks.log	version	
+ socks.log	user	
+ socks.log	password	
+ socks.log	status	 server_status
+ socks.log	request	
+ socks.log	*	 request_host
+ socks.log	*	 request_name
+ socks.log	request_p	 request_port
+ socks.log	bound	
+ socks.log	*	 bound_host
+ socks.log	*	 bound_name
+ socks.log	bound_p	 bound_port
+ software.log	ts	 timestamp
+ software.log	host	 source_ip
+ software.log	host_p	 source_port
+ software.log	software_type	
+ software.log	name	
+ software.log	major	 version_major
+ software.log	minor	 version_minor
+ software.log	minor2	 version_minor2
+ software.log	minor3	 version_minor3
+ software.log	addl	 version_additional_info
+ software.log	unparsed_version	
+ ssh.log	ts	 timestamp
+ ssh.log	uid	
+ ssh.log	id.orig_h	 source_ip
+ ssh.log	id.orig_p	 source_port
+ ssh.log	id.resp_h	 destination_ip
+ ssh.log	id.resp_p	 destination_port
+ ssh.log	version	
+ ssh.log	auth_success	 authentication_success
+ ssh.log	auth_attempts	 authentication_attempts
+ ssh.log	direction	
+ ssh.log	client	
+ ssh.log	server	
+ ssh.log	cipher_alg	 cipher_algorithm
+ ssh.log	mac_alg	 mac_algorithm
+ ssh.log	compression_alg	 compression_algorithm
+ ssh.log	kex_alg	 kex_algorithm
+ ssh.log	host_key_alg	 host_key_algorithm
+ ssh.log	host_key	
+ ssh.log	destination_country_code	
+ ssh.log	destination_region	
+ ssh.log	destination_city	
+ ssh.log	destination_latitude	
+ ssh.log	destination_longitude	
+ ssl.log	ts	 timestamp
+ ssl.log	uid	
+ ssl.log	id.orig_h	 source_ip
+ ssl.log	id.orig_p	 source_port
+ ssl.log	id.resp_h	 destination_ip
+ ssl.log	id.resp_p	 destination_port
+ ssl.log	version	
+ ssl.log	cipher	
+ ssl.log	curve	
+ ssl.log	server_name	
+ ssl.log	resumed	
+ ssl.log	last_alert	
+ ssl.log	next_protocol	
+ ssl.log	established	
+ ssl.log	cert_chain_fuids	 certificate_chain_fuids
+ ssl.log	client_cert_chain_fuids	 client_certificate_chain_fuids
+ ssl.log	subject	 certificate_subject
+ ssl.log	certificate_issuer	
+ ssl.log	client_subject	
+ ssl.log	client_issuer	
+ ssl.log	validation_status	
+ ssl.log	ja3 (if JA3 enabled)	
+ syslog.log	ts	 timestamp
+ syslog.log	uid	
+ syslog.log	id.orig_h	 source_ip
+ syslog.log	id.orig_p	 source_port
+ syslog.log	id.resp_h	 destination_ip
+ syslog.log	id.resp_p	 destination_port
+ syslog.log	proto	 protocol
+ syslog.log	facility	
+ syslog.log	severity	
+ syslog.log	message	
+ tunnel.log	ts	 timestamp
+ tunnel.log	uid	
+ tunnel.log	id.orig_h	 source_ip
+ tunnel.log	id.orig_p	 source_port
+ tunnel.log	id.resp_h	 destination_ip
+ tunnel.log	id.resp_p	 destination_port
+ tunnel.log	tunnel_type	
+ tunnel.log	action	
+ weird.log	ts	 timestamp
+ weird.log	uid	
+ weird.log	name	
+ weird.log	addl	 additional_info
+ weird.log	notice	
+ weird.log	peer	
+ x509.log	ts	 timestamp
+ x509.log	id	
+ x509.log	certificate	
+ x509.log	* certificate_version	
+ x509.log	* certificate_serial	
+ x509.log	* certificate_subject	
+ x509.log	* certificate_issuer	
+ x509.log	* certificate_not_valid_before	
+ x509.log	* certificate_not_valid_after	
+ x509.log	* certificate_key_algorithm	
+ x509.log	* certificate_signing_algorithm	
+ x509.log	* certificate_key_type	
+ x509.log	* certificate_key_length	
+ x509.log	* certificate_exponent	
+ x509.log	* certificate_curve	
+ x509.log	san	
+ x509.log	* san_dns	
+ x509.log	* san_uri	
+ x509.log	* san_email	
+ x509.log	* san_ip	
+ x509.log	basic_constraints	
+ x509.log	* basic_constraints_ca	
+ x509.log	* basic_constraints_path_length	
